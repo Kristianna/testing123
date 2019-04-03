@@ -1,0 +1,19 @@
+kristianna@voldemort:~/testing123$ git branch
+* master
+kristianna@voldemort:~/testing123$ git branch test_branch
+kristianna@voldemort:~/testing123$ git branch
+* master
+  test_branch
+kristianna@voldemort:~/testing123$ git checkout test_branch
+Switched to branch 'test_branch'
+kristianna@voldemort:~/testing123$ git branch
+  master
+* test_branch
+
+/* This will take you from one directory to another */
+
+kristianna@voldemort:~/testing123$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kristianna@voldemort:~/testing123$

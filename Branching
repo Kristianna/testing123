@@ -1,12 +1,14 @@
-kristianna@voldemort:~/testing123$ git branch
+HelloWorld@Something:~/testing123$ git branch
 * master
 
-kristianna@voldemort:~/testing123$ git branch test_branch
-kristianna@voldemort:~/testing123$ git branch
+HelloWorld@Something:~/testing123$ git branch test_branch
+
+HelloWorld@Something:~/testing123$ git branch
 
 * master
   test_branch
-kristianna@voldemort:~/testing123$ git checkout test_branch
+
+HelloWorld@Something:~/testing123$ git checkout test_branch
 Switched to branch 'test_branch'
 
 HelloWorld@Something:~/testing123$ git branch

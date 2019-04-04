@@ -55,8 +55,8 @@ HelloWorld@Something:~/testing123$ git commit -m "Created a branching documentat
  create mode 100644 Branching
 
 HelloWorld@Something:~/testing123$ git push origin test_branch
-Username for 'https://github.com': Kristianna
-Password for 'https://Kristianna@github.com':
+Username for 'https://github.com':
+Password for 'https://YOUR MOMS CHEST HAIR:
 Counting objects: 4, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (4/4), done.

@@ -1,0 +1,71 @@
+HelloWorld@Something:~/testing123$ git branch
+* master
+
+HelloWorld@Something:~/testing123$ git branch test_branch
+
+HelloWorld@Something:~/testing123$ git branch
+
+* master
+  test_branch
+
+HelloWorld@Something:~/testing123$ git checkout test_branch
+Switched to branch 'test_branch'
+
+HelloWorld@Something:~/testing123$ git branch
+  master
+* test_branch
+
+/* This will take you from one directory to another */
+
+HelloWorld@Something:~/testing123$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HelloWorld@Something:~/testing123$ git checkout test_branch
+Switched to branch 'test_branch'
+
+HelloWorld@Something:~/testing123$ git status
+On branch test_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Branching
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HelloWorld@Something:~/testing123$ git add test.html Branching
+
+HelloWorld@Something:~/testing123$ git status
+On branch test_branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Branching
+	modified:   test.html
+
+HelloWorld@Something:~/testing123$ git commit -m "Created a branching documentation, while also editing test.html."
+[test_branch 19d8231] Created a branching documentation, while also editing test.html.
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ create mode 100644 Branching
+
+HelloWorld@Something:~/testing123$ git push origin test_branch
+Username for 'https://github.com':
+Password for 'https://YOUR MOMS CHEST HAIR:
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 660 bytes | 660.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'test_branch' on GitHub by visiting:
+remote:      https://github.com/Kristianna/testing123/pull/new/test_branch
+remote:
+To https://github.com/Kristianna/testing123.git
+ * [new branch]      test_branch -> test_branch
